@@ -10,7 +10,7 @@ import com.jskj.jdmall.ui.BaseActivity
  */
 class ActivityUtils {
     companion object {
-        fun start(context: Context, t:Class<in BaseActivity>, isFinished:Boolean = false) {
+        fun start(context: Context, t:Class<out BaseActivity>, isFinished:Boolean = false) {
             val activity = context as Activity
             val intent = Intent(context, t)
             activity.startActivity(intent)

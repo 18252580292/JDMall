@@ -1,5 +1,6 @@
 package com.jskj.jdmall.util
 
+import com.orhanobut.logger.Logger
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.HttpURLConnection
@@ -20,7 +21,7 @@ class NetworkUtils {
                 requestData += "&${it!!.key}=${it!!.value}"
             }
 
-
+            Logger.d(requestData)
             requestData = requestData.substring(1)
 
             conn.outputStream.write(requestData.toByteArray())

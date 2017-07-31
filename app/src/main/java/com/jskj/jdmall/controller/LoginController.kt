@@ -36,7 +36,7 @@ class LoginController : BaseController() {
     fun processLoginAction(username: String, password: String) {
         val map = HashMap<String, String>()
         map.put("username", username)
-        map.put("password", password)
+        map.put("pwd", password)
 
         val resultJson = NetworkUtils.doPost(NetworkConstants.LOGIN_URL, map)
         if(StringUtils.isEmpty(resultJson)) {
