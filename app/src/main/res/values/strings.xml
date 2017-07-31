@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JdMall</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="login_txt">登录</string>
+    <string name="user_register">新用户注册</string>
+    <string name="reset_pwd">重置密码</string>
+</resources>
